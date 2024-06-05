@@ -1,0 +1,167 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.Op-container{
+    display: grid;
+    width: 85vw;
+    height: auto;
+    border: 10px;
+    margin: 20px auto;
+    background-color: rgb(230, 130, 99);
+    outline: 8px solid blanchedalmond;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+
+img{
+    width: 120px;
+}
+
+.item{
+    border: 5px solid darkcyan;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.name{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    line-height: 1.5;
+    color: black;
+    
+
+}
+
+#luffy{
+    background-color: #FF0066;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#ace{
+    background-color: #64BCF7;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#sabo{
+    background-color: #56AAA8;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#smoker{
+    background-color: #3E6166;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#oden{
+    background-color: #135D67;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+#luffy .details,
+#oden .details{
+    flex-direction: row;
+}
+
+@media(max-width: 1000px){
+    .Op-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #luffy{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #ace{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #sabo{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #smoker{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #oden{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+@media(max-width: 750px){
+    .Op-container{
+        grid-template-columns: 1fr;
+    }
+
+    #luffy{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #ace{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #sabo{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #smoker{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #oden{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #luffy .details,
+#oden .details,
+#ace .details,
+#sabo .details,
+#smoker .details {
+    flex-direction: row;
+}
+
+}
+
