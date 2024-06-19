@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background: #232323;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav .logo img{
+    height: 20px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+header img {
+    width: auto;
+    height: 80px;
+}
+
+header h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.game-grid, .character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.game, .character {
+    flex: 1 1 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+    text-align: center;
+}
+
+.game img, .character img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game h3, .character h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .game, .character {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-links {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav .nav-links li {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .game, .character {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
