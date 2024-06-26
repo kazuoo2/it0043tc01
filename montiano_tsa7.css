@@ -14,7 +14,7 @@ body {
 .controls {
     width: 200px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #7fa32c;
     border-right: 1px solid #ccc;
 }
 
@@ -28,12 +28,12 @@ body {
     padding: 10px;
     width: 100%;
     border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: #41eb2b;
     cursor: pointer;
 }
 
 .controls button:hover {
-    background-color: #ddd;
+    background-color: #41eb2b;
 }
 
 .controls label {
@@ -58,7 +58,7 @@ body {
 }
 
 .flex-item {
-    background-color: #4caf50;
+    background-color: #4c77af;
     color: white;
     padding: 20px;
     text-align: center;

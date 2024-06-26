@@ -22,13 +22,11 @@ function setFlexGrow(item, value) {
 }
 
 function resetFlexbox() {
-    // Reset Flexbox container properties
     flexContainer.style.flexDirection = 'row';
     flexContainer.style.justifyContent = 'flex-start';
     flexContainer.style.alignItems = 'flex-start';
     flexContainer.style.gap = '10px';
     
-    // Reset Flex Grow values for each item
     document.getElementById('flex-grow-1').value = 0;
     document.getElementById('flex-grow-2').value = 0;
     document.getElementById('flex-grow-3').value = 0;
@@ -36,6 +34,5 @@ function resetFlexbox() {
         flexContainer.children[i].style.flexGrow = 0;
     }
     
-    // Reset Gap input value
     document.getElementById('gap').value = 10;
 }
