@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.simulator {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.controls {
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+.controls h2 {
+    margin-top: 0;
+}
+
+.controls button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #ddd;
+}
+
+.controls label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.controls input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-item {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.flex-grow-controls label {
+    display: inline-block;
+    margin-right: 10px;
+}

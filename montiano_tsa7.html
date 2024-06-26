@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="montiano_tsa7.css">
+</head>
+
+<body>
+    <div class="simulator">
+        <div class="controls">
+            <h2>Flexbox Options</h2>
+            <button onclick="setFlexDirection('row')">Row</button>
+            <button onclick="setFlexDirection('column')">Column</button>
+            <h2>Justify Content</h2>
+            <button onclick="setJustifyContent('flex-start')">Start</button>
+            <button onclick="setJustifyContent('flex-end')">End</button>
+            <button onclick="setJustifyContent('center')">Center</button>
+            <button onclick="setJustifyContent('space-between')">Space Between</button>
+            <button onclick="setJustifyContent('space-around')">Space Around</button>
+            <h2>Align Items</h2>
+            <button onclick="setAlignItems('flex-start')">Start</button>
+            <button onclick="setAlignItems('flex-end')">End</button>
+            <button onclick="setAlignItems('center')">Center</button>
+            <label for="gap">Gap: </label>
+            <input type="number" id="gap" min="0" max="50" value="10" oninput="setGap(this.value)">
+            <h3>Flex Grow</h3>
+            <div class="flex-grow-controls">
+                <label for="flex-grow-1">1:</label>
+                <input type="number" id="flex-grow-1" min="0" max="5" value="0" oninput="setFlexGrow(1, this.value)">
+                <label for="flex-grow-2">2:</label>
+                <input type="number" id="flex-grow-2" min="0" max="5" value="0" oninput="setFlexGrow(2, this.value)">
+                <label for="flex-grow-3">3:</label>
+                <input type="number" id="flex-grow-3" min="0" max="5" value="0" oninput="setFlexGrow(3, this.value)">
+            </div>
+            <button onclick="resetFlexbox()">Reset</button>
+        </div>
+        <div class="flex-container" id="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+    </div>
+    <script src="montiano_tsa7.js"></script>
+</body>
+
+</html>
