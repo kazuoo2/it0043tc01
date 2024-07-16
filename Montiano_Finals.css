@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("bg.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+
+header {
+    background-color: #032705;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    display: none; 
+}
+
+.menu {
+    display: flex; 
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    width: auto;
+    box-shadow: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.menu.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        border-bottom: 1px solid #444;
+        margin: 0;
+    }
+
+    .menu ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.DP img {
+    width: 500px;
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+.logo img {
+    height: 80px;
+    margin-left: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+#home {
+    background-image: url("bg1.gif");
+    text-align: center;
+}
+
+.about {
+    border: 3px solid green;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.portfolio-item1 {
+    border: 3px solid green;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.pokemon{
+    width: 900px;
+    height: 600px;
+}
+
+.portfolio-item2 {
+    border: 3px solid green;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.onepiece{
+    width: 900px;
+    height: 600px;
+}
+
+.portfolio-item3 {
+    border: 3px solid green;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.flexbox{
+    width: 900px;
+    height: 600px;
+}
+
+.portfolio-item4 {
+    border: 3px solid green;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.pokedex{
+    width: 900px;
+    height: 600px;
+}
+
+.faq-container {
+    border: 3px solid green;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item input[type="text"] {
+    width: calc(100% - 80px); 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.faq-item button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+}
+
+.faq-content p {
+    margin: 0;
+}
+
+.contact {
+    border: 3px solid green;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #032705;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: white;
+    text-decoration: none;
+}
+
